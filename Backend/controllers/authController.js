@@ -15,6 +15,8 @@ export const register = async (req, res) => {
         email,
         password: hash,
         role,
+        branch,
+        semester
     });
 
     res.json(user);

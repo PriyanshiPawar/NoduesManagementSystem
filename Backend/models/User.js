@@ -15,6 +15,8 @@ const User = sequelize.define("User", {
     role: {
         type: DataTypes.ENUM("student", "teacher", "hod", "account", "exam"),
     },
+    branch:DataTypes.STRING,
+    semester:DataTypes.INTEGER
 });
 
 export default User;
